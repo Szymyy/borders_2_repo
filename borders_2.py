@@ -18,12 +18,14 @@ class button():
     self.function = function
 
   def clicked(self):
-    self.funtion
+    self.function()
 
 
+def test():
+  print("I work")
+button_1 = button((500,500),(0,0), (255,255,255), test)
 
 
-button_1 = button((50,50),(225,225), (255,255,255), 0)
 buttons = []
 buttons.append(button_1)
 # initalises an itnitial button object for testing
@@ -31,11 +33,11 @@ buttons.append(button_1)
 
 
 def menu():
+  background = pygame.image.load("Background test.png")
   menu_buttons = [button_1]
   menu_events = pygame.event.get()
   # for the time being the event handler will have to take menu_buttons as a parameter
   event_handler(menu_events, menu_buttons)
-  background = pygame.image.load("Background test.png")
   title = pygame.image.load("Title test.png")
   window.blit(background,(0,0))
   window.blit(title,(125,50))
@@ -52,7 +54,7 @@ def event_handler(events, menu_buttons):
 
 
 # the button press area function checks if the cursor was over a button at time of pressing and returns the buttons function if so
-def button_press_area(mouse):
+def button_press_area(buttons, mouse):
   for button in buttons:
     if mouse[0] > button.location[0] and mouse[0] <= button.location[0] + button.size[0]:
       if mouse[1] > button.location[1] and mouse[1] <= button.location[1] + button.size[1]:
