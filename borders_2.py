@@ -1,4 +1,7 @@
 import pygame
+import demo 
+
+demo.demo("Proof")
 pygame.init()
 # imports the pygame library used for the project
 window = pygame.display.set_mode((500, 500))
