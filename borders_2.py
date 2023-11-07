@@ -1,39 +1,20 @@
 import pygame
-import demo 
+import button
 
-demo.demo("Proof")
 pygame.init()
 # imports the pygame library used for the project
 window = pygame.display.set_mode((500, 500))
 # sets the window size
 clock = pygame.time.Clock()
 
-
-
-class button():
-  # takes in the list of the x and y size of the button and a list of 
-  # the x and y coordinates of the button
-  # graphics will currently pass the RGB code for a colour of a button
-  def __init__(self, size, location, graphics, function):
-    self.size = size
-    self.location = location
-    self.graphics = graphics
-    self.function = function
-
-  def clicked(self):
-    self.function()
-
-
 def test():
   print("I work")
-button_1 = button((500,500),(0,0), (255,255,255), test)
+button_1 = button.button((500,500),(0,0), (255,255,255), test)
 
 
 buttons = []
 buttons.append(button_1)
 # initalises an itnitial button object for testing
-
-
 
 def menu():
   background = pygame.image.load("Background test.png")
@@ -68,5 +49,5 @@ def button_press_area(buttons, mouse):
 running = True
 while running:
   menu()
-  clock.tick(30) # limits the game to 30 fps
+  clock.tick(20) # limits the game to 20 fps
 

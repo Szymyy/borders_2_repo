@@ -1,4 +1,12 @@
 [[package]]
+name = "alien-invasion1"
+version = "1.0.0"
+description = "这是我第一阶段的项目"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "pygame"
 version = "2.5.2"
 description = "Python Game Development"
@@ -9,7 +17,8 @@ python-versions = ">=3.6"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "9db7fbd0b4ab93c814eaa823a7f904aee44411aa81945129aae2a7091ddcfbc7"
+content-hash = "9c34ed32ffb8149bafed8a59e783bab2d7cd0e2d95064b3506aca5e37bb0281a"
 
 [metadata.files]
+alien-invasion1 = []
 pygame = []
