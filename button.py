@@ -10,12 +10,15 @@ class Button():
     self.function = function
     self.surface = surface
 
+#
+  
   def is_clicked(self):
     pos = pygame.mouse.get_pos()
     if pos[0] > self.location[0] and pos[0] < self.location[0] + self.size[0]:
       if pos[1] > self.location[1] and pos[1] < self.location[1] + self.size[1]:
         self.function()
 
-
+# 
+  
   def draw(self):
     pygame.draw.rect(self.surface, self.graphics, (self.location, self.size))
