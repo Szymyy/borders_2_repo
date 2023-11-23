@@ -41,3 +41,6 @@ while running:
   menu()
   clock.tick(20) # limits the game to 20 fps
 
+
+### testing git ###
+
