@@ -29,7 +29,7 @@ def menu():
   event_handler(menu_events, buttons)
   pygame.display.update()
 
-# the event handler takes all the events happening in the current game-state function and handles them appropriately, currently just checks for mouse clikcs
+# the event handler takes all the events happening in the current game-state function and handles them appropriately, currently just checks for mouse clicks
 def event_handler(events, buttons):
   for event in events:
     if event.type == pygame.MOUSEBUTTONDOWN:

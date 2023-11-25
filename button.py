@@ -10,7 +10,9 @@ class Button():
     self.function = function
     self.surface = surface
 
-#
+  # called when a mouse click is detected, checks whether the mouse pos is
+  # within the area of a given button object, if so, the related function
+  # is executed
   
   def is_clicked(self):
     pos = pygame.mouse.get_pos()
@@ -18,7 +20,7 @@ class Button():
       if pos[1] > self.location[1] and pos[1] < self.location[1] + self.size[1]:
         self.function()
 
-# 
+  # will render the button
   
   def draw(self):
     pygame.draw.rect(self.surface, self.graphics, (self.location, self.size))
