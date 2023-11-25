@@ -1,6 +1,7 @@
 import pygame
 import button
 import graphics_handler
+import document
 
 
 pygame.init()
