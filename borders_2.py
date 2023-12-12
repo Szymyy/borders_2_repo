@@ -3,7 +3,6 @@ import button
 import graphics_handler
 import document
 
-
 pygame.init()
 # imports the pygame library used for the project
 window = pygame.display.set_mode((500, 500))
