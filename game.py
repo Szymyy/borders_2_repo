@@ -2,7 +2,7 @@ import pygame
 import button 
 import graphics_handler
 
-game_graphics = graphics_handler.graphics_handler()
+game_graphics = graphics_handler.Graphics_Handler()
 buttons = []
 
 def game(surf):

@@ -1,7 +1,7 @@
 import random
 import pygame
 
-class document():
+class Document():
   def __init__(self, size, location, graphics, surface):
     self.size = size
     self.location = location

@@ -1,4 +1,4 @@
-class graphics_handler():
+class Graphics_Handler():
   def __init__(self):
     self.objects_background = []
     self.objects_object = []
