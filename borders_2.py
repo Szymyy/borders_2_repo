@@ -8,16 +8,23 @@ pygame.init()
 window = pygame.display.set_mode((500, 500))
 # sets the window size
 clock = pygame.time.Clock()
-def test():
-  menu_graphics.remove_object(False, button_1)
-  buttons.remove(button_1)
 
 menu_graphics = graphics_handler.graphics_handler()
-button_1 = button.Button((50,50),(125,125), (255,255,255), test, window)
 buttons = []
 
-menu_graphics.add_object(False, button_1)
-buttons.append(button_1)
+pass_1 = document.document((50,50), (100,100), (0,255,0),window)
+menu_graphics.add_object(False, pass_1)
+
+def testing_pass():
+  if pass_1.accept():
+    print("True")
+  else:
+    print("False")
+
+  if pass_1.deny():
+    print("True")
+  else:
+    print("False")
 
 def menu():
   background = pygame.image.load("Background test.png")
@@ -37,7 +44,11 @@ def event_handler(events, buttons):
         Button.is_clicked()
 
 running = True
+testing_pass()
+
 while running:
   menu()
   clock.tick(20) # limits the game to 20 fps
+
+
 
