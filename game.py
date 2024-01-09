@@ -5,9 +5,11 @@ import graphics_handler
 game_graphics = graphics_handler.Graphics_Handler()
 buttons = []
 
-def game(surf):
+window = pygame.display.set_mode((500, 500))
+
+def game():
   background = pygame.image.load("Background test.png")
-  surf.blit(background,(0,0))
+  window.blit(background,(0,0))
   game_graphics.render_objects()
   game_events = pygame.event.get()
   event_handler(game_events, buttons)

@@ -25,7 +25,7 @@ def menu():
 current_state = menu
 
 def state_game():
-  current_state = game.game(window)
+  current_state = game
 
 game_button = button.Button((125,50), (255,255), (255,255,255), state_game, window)
 buttons.append(game_button)
