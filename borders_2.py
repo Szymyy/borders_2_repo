@@ -2,6 +2,7 @@ import pygame
 import button
 import graphics_handler
 import event_handler
+import traveller 
 
 pygame.init()
 # imports the pygame library used for the project
@@ -29,8 +30,13 @@ def menu():
 
 current_state = menu
 
+test_1 = traveller.Traveller()
+
 def state_game():
-  print("womp womp")
+  test_1.randomise()
+  print(test_1.firstname)
+  print(test_1.surname)
+  
 
 game_button = button.Button((125,50), (255,255), (255,255,255), state_game, window)
 buttons.append(game_button)
