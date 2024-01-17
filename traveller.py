@@ -15,6 +15,7 @@ class Traveller():
     names = firstnames.readlines()
     position = random.randint(1,50)
     self.firstname = names[position]
+    
     firstnames.close()
 
     surnames = open("names/surnames.txt")
@@ -22,6 +23,7 @@ class Traveller():
     names = surnames.readlines()
     position = random.randint(1,50)
     self.surname = names[position]
+    
     surnames.close()
 
     
