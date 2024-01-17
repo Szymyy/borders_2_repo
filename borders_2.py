@@ -36,6 +36,7 @@ def state_game():
   test_1.randomise()
   print(test_1.firstname)
   print(test_1.surname)
+  print(test_1.DOB)
   
 
 game_button = button.Button((125,50), (255,255), (255,255,255), state_game, window)
@@ -43,7 +44,7 @@ buttons.append(game_button)
 menu_graphics.add_object(False, game_button)
 
 running = True
-
+state_game()
 while running:
   menu()
   clock.tick(30) # limits the game to 30 fps
